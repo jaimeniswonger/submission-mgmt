@@ -1,0 +1,9 @@
+<% if ( fuzzy > 0) { %>
+<span id="tabEntityFuzzyCount" class="badge badge-warning"><%= fuzzy %></span>&nbsp;
+<% } %>
+<% if ( unmatched > 0) { %>
+<span id="tabEntityUnmatchedCount" class="badge badge-important"><%= unmatched %></span>
+<% } %>
+<% if ( unmatched == 0 && fuzzy == 0) { %>
+<span class="badge badge-success"><i class="icon icon-ok icon-white"/></span>
+<% } %>
